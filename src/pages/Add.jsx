@@ -86,7 +86,7 @@ function Add() {
         <div className="max-w-4xl mx-auto bg-white p-6 rounded shadow">
           {/* Add New Article Form */}
           <div className="mt-6">
-            <h2 className="text-lg font-semibold mb-2">Add New Article</h2>
+            <h2 className="text-lg font-semibold mb-2">{form === "add" ? "Add New" : "Edit"} Article</h2>
             <form action={handlePublish}>
               <input
                 type="text"
